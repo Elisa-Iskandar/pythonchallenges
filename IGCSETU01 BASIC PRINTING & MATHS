@@ -1,1 +1,8 @@
+#Exercise 1
+print("Hello")
 
+#Exercise 2
+print((13*13)/3)
+
+#Exercise 3
+print(22/7)
