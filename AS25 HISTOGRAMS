@@ -1,0 +1,16 @@
+#Define a procedure histogram that takes a list of integers and prints a histogram to the screen. For example, histogram([4, 9, 7]) should print the following:
+numlist = []
+        
+temp = 0
+while temp != -1:
+  temp = int(input("Input a number >= 0 to add to a histogram. Input -1 to stop."))
+  if temp != -1:
+    numlist.append(temp)
+print(numlist)
+
+def histogram(numlist):
+  if numlist:
+    for x in numlist:
+      print("*"*x)
+   
+print(histogram(numlist))
