@@ -1,0 +1,8 @@
+#Exercise 1: Setup variable and print it out.
+number = [0,1,2,3,4,5]
+print(number)
+
+#Exercise 2: Come up with your own variable and slice it forwards, backwards and skip a letter or two.
+print(number[0:2])
+print(number[-1:-6:-1])
+print(number[0:3],number[4:6])
