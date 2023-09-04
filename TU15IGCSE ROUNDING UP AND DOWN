@@ -1,0 +1,8 @@
+#Exercise 1: Can you change the rounding, so that it displays to 3 decimal places.
+x=3.33333333
+print(x)
+x=round(x,3)
+print(x)
+
+#Exercise 2: Can you change the code, so that the variable isn't PERMANENTLY changed, but is printed to 1 decimal place?
+print(round(x,1))
