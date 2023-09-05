@@ -1,0 +1,10 @@
+radius = float(input("input a radius "))
+def circumference():
+  x = 2*3.14*radius
+  return x
+
+def area():
+  x = 3.14*radius*radius
+  return x
+
+print(circumference(),area())
