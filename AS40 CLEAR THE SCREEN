@@ -1,0 +1,4 @@
+def ClearScreen():
+    return " "*1000000
+
+print(ClearScreen())
