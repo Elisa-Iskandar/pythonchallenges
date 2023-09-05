@@ -1,0 +1,9 @@
+string = input("Input a string.")
+index = -len(string)
+def reversal(string,index):
+  for y in range(len(string)):
+    index += 1
+    print(string[index], end="")
+  return ""
+
+print(reversal(string,index))
