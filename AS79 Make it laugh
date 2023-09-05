@@ -1,0 +1,15 @@
+#Write a procedure make_it_laugh(string) to replace all vowels in an input string with "haha". Print the modified string after to verify your procedure has worked.
+string = input("Input a sentence.")
+vowels = ["a", "e", "i", "o", "u"]
+
+def MakeItLaugh(string):
+  for x in range(len(string)):
+
+    if string[x] in vowels:
+      print("haha", end="")
+    else:
+      print(string[x], end="")
+  return " "
+
+
+print(MakeItLaugh(string))
