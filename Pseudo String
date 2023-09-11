@@ -11,46 +11,68 @@ def LEFT(string,length):
 
 def RIGHT(string,length):
     # Returns the right most characters of a string
-    pass
+    return string[-length::]
 
 def MID (string,start,end):
     # Returns string from position x, length y. Note that the count starts at 1. 
-    pass
+    
+    return string[(start-1):end]
     
 def LENGTH (string):
     #Returns the lengths of a string
-    pass
+    return len(string)
 
-def LCASE ():
-# From here on in you need to figure out the parameters and the function.    
-    pass
+def LCASE (string):
+# From here on in you need to figure out the parameters and the function. 
+  output = ""
+  for x in string:
+    if x.islower() == True:
+      output += x
+  return output
     
-def UCASE():
+def UCASE(string):
   #Returns the upper case character. (Does nothing if already upper case). Note that this works on characters rather than a string.
-    pass
+  output = ""
+  for x in string:
+    if x.isupper() == True:
+      output += x
+  return output
 
-def TO_UPPER():
+def TO_UPPER(string):
   #Returns a string in upper case. (Non-alphabetic characters and upper case characters remain unchanged)
-    pass
+  return string.upper()
  
-def TO_LOWER():
+def TO_LOWER(string):
   #Returns a string in lower case. (Non-alphabetic characters and lower case characters remain unchanged)
+  return string.lower()
 
-    pass
  
-def NUM_TO_STRING():
-    pass
+def NUM_TO_STRING(string):
+  return str(string)
 
-def STRING_TO_NUM():
-    pass
+def STRING_TO_NUM(string):
+  return float(string)
 
-def INT():
-    pass
+def INT(string):
+  return int(string)
 
-def ASC():
+def ASC(string):
   #Changes a character into its ASCII number.
-    pass
+  return ord(string)
 
 # example function being called    
-my_string = LEFT("hello",2)
-print(my_string)
+left = LEFT("Hello",2)
+print(left)
+right = RIGHT("Hello",2)
+print(right)
+middle = MID("Hello",2,4)
+print(middle)
+print(LENGTH("Hello"))
+print(LCASE ("Hello"))
+print(UCASE ("Hello"))
+print(TO_UPPER("Hello"))
+print(TO_LOWER("Hello"))
+print(NUM_TO_STRING(123))
+print(STRING_TO_NUM("123"))
+print(INT("123"))
+print(ASC("H"))
