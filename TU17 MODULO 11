@@ -1,9 +1,19 @@
 num = [1,2,3,4]
+num.reverse()
+
 multipliers = [5,4,3,2]
+multipliers.reverse()
+
 multiplied = []
 sum = 0
 for x in range(len(num)):
   multiplied.append(num[x]*multipliers[x])
   sum += multiplied[x]
 
-print(11-(sum%11))
+
+if sum%11 == 0:
+  print(0)
+elif sum%11 == 1:
+  print("X")
+elif sum%11 > 0:
+  print(11-(sum%11))
