@@ -1,0 +1,9 @@
+num = [1,2,3,4]
+multipliers = [5,4,3,2]
+multiplied = []
+sum = 0
+for x in range(len(num)):
+  multiplied.append(num[x]*multipliers[x])
+  sum += multiplied[x]
+
+print(11-(sum%11))
