@@ -1,0 +1,24 @@
+import random
+realnum = random.randint(1,100)
+print(realnum)
+guess = None
+def inputnum():
+    while True:
+        try:
+            x = int(input("input a number 1-100: "))
+            break
+        except ValueError:
+            print("Not an integer")
+    return x
+
+guess = inputnum()
+
+while guess != realnum:
+    if guess>realnum:
+        print("Lower")
+        guess = inputnum()
+    elif guess<realnum:
+        print("Higher")
+        guess = inputnum()
+
+print("You got it")
