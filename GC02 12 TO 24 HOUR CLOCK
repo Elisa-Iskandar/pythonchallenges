@@ -1,0 +1,10 @@
+#User inputs 12 hour clock and am or pm and you will convert it to the 24 hour equivalent.
+time = input("Input time: ")
+if time[-2::] == 'am':
+    temp = int(time[0:2])
+    temp2 = temp + 12
+    time = time.replace(str(temp),str(temp2))
+    if time[0:2] == '24':
+        time = time.replace('24','00')
+
+print(time)
