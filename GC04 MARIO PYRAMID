@@ -1,0 +1,7 @@
+# User inputs a number. It then creates the appropriate sized pyramid. e.g. Pyramid Size 3
+# x
+# xxx
+# xxxxx
+num = int(input("Input a number: "))
+for x in range(num):
+    print('x'+'x'*(2*x))
