@@ -1,0 +1,13 @@
+#An evil maths teacher has locked his students in school until they manage to type the first 100 numbers of the Fibonacci sequence. Can you think of a quicker way to do it in Python?
+print(0)
+print(1)
+print(1)
+print(2)
+last = 2
+last2 = 1
+for x in range(96):
+    print(last+last2)
+    if x%2==0:
+        last2 = (last+last2)
+    else:
+        last = (last+last2)
