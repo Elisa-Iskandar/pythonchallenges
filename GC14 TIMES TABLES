@@ -1,0 +1,4 @@
+#Primary teachers would love to have a Times Tables generator to copy and paste.
+num = int(input("Which times table do you want? "))
+for x in range(12):
+    print(num,'x',(x+1),'=',(num*(x+1)))
