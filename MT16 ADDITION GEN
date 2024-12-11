@@ -1,0 +1,5 @@
+limit = int(input("Input limit: "))
+result = 1
+while result < limit:
+    result += 1
+    print(result-1, "+ 1 =", result)
